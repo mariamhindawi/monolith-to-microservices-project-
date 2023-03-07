@@ -4,7 +4,6 @@ metadata:
   labels:
     app: udagram-api-feed-svc
   name: backend-feed
-  namespace: udagram
 spec:
   ports:
   - name: "8080"
