@@ -12,12 +12,12 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
-  - docker tag reverseproxy mariamhindawi/reverseproxy:latest
-  - docker tag udagram-api-user mariamhindawi/udagram-api-user:latest
-  - docker tag udagram-api-feed mariamhindawi/udagram-api-feed:latest
-  - docker tag udagram-frontend mariamhindawi/udagram-frontend:latest
+    - docker tag reverseproxy mariamhindawi/reverseproxy:latest
+    - docker tag udagram-api-user mariamhindawi/udagram-api-user:latest
+    - docker tag udagram-api-feed mariamhindawi/udagram-api-feed:latest
+    - docker tag udagram-frontend mariamhindawi/udagram-frontend:latest
 
-  - docker push mariamhindawi/reverseproxy:latest
-  - docker push mariamhindawi/udagram-api-user:latest
-  - docker push mariamhindawi/udagram-api-feed:latest
-  - docker push mariamhindawi/udagram-frontend:latest
+    - docker push mariamhindawi/reverseproxy:latest
+    - docker push mariamhindawi/udagram-api-user:latest
+    - docker push mariamhindawi/udagram-api-feed:latest
+    - docker push mariamhindawi/udagram-frontend:latest
