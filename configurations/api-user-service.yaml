@@ -4,7 +4,7 @@ kind: Service
 metadata:
   labels:
       app: udagram-api-user
-  name: backend-user
+  name: api-user
 spec:
   selector:
     service: udagram-api-user
