@@ -4,6 +4,7 @@ node_js:
   - 16
 services:
   - docker
+
 script:
   - docker --version
   - docker-compose -f docker-compose-build.yaml build --parallel
