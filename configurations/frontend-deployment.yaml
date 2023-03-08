@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name:  udagram-frontend
-        image: mariamhindawi/udagram-frontend:local
+        image: mariamhindawi/udagram-frontend:latest
         imagePullPolicy: Always  
       restartPolicy: Always
